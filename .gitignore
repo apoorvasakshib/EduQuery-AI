@@ -1,0 +1,59 @@
+# Node & Dependency Directories
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Next.js Build Outputs
+.next/
+client/.next/
+out/
+build/
+dist/I have completed my EduQuery AI 2.0 RAG-based college chatbot.
+
+I want to upload this existing project to my GitHub repository without installing Git locally.
+
+Please:
+1. Inspect the complete project structure.
+2. Make sure the client and server are included.
+3. Create an appropriate .gitignore file.
+4. Make sure node_modules, .env files, API keys, passwords, MongoDB credentials, and other secrets are NOT committed.
+5. Check that the project is ready to be pushed to GitHub.
+6. Do not modify the working RAG functionality.
+7. Do not delete any existing project files.
+8. Tell me exactly what you changed before pushing anything.
+
+# Environment Variables & Sensitive Secrets (NEVER COMMIT)
+.env
+.env.*
+!.env.example
+*.env
+**/.env
+**/.env.*
+!**/.env.example
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+*.pem
+*.key
+*.cert
+
+# Editor & IDE Configs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Testing & Logs
+coverage/
+*.log
