@@ -51,8 +51,8 @@ Ensure your `server/.env` file contains:
 
 ```env
 PORT=5000
-MONGODB_URI=mongodb://127.0.0.1:27017/eduquery_db
-JWT_SECRET=eduquery_super_secret_jwt_key_2026_change_in_production
+MONGODB_URI=your_mongodb_string
+JWT_SECRET=your_jwt_secret
 GEMINI_API_KEY=YOUR_GEMINI_API_KEY_HERE
 ```
 
@@ -66,10 +66,7 @@ npm run seed
 
 This creates initial departments (CSE, Data Science, ECE, Mechanical, Exam Cell, Student Affairs), default collections, demo documents with Version 1, approved FAQs, and initial demo accounts:
 
-- **Super Admin**: `superadmin@college.edu` / `superadmin123`
-- **Dept Admin**:  `cseadmin@college.edu` / `deptadmin123`
-- **Student**:     `student@college.edu` / `student123`
-
+Demo accounts are configured through enviornmental variables and local/deployment database setup
 ### 3. Start Backend Server
 ```bash
 npm run dev
